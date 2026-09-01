@@ -44,10 +44,6 @@ refinement.
   <em>PixSGR couples cross-scale token scoring with guided sparse attention and convolutional upsampling.</em>
 </p>
 
-## Paper
-
-The paper link and citation will be added when the preprint becomes publicly
-available.
 
 ## Contact
 
