@@ -1,6 +1,5 @@
 <h2 align="center">Advanced Pixel Diffusion Model with Guided Sparse Global Refinement</h2>
 
-
 <p align="center">
   Weiyi You &middot;
   Jinhua Zhang &middot;
@@ -19,7 +18,9 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/arXiv-coming%20soon-b31b1b.svg" alt="arXiv coming soon">
+  <a href="https://arxiv.org/abs/2609.00798">
+    <img src="https://img.shields.io/badge/arXiv-2609.00798-b31b1b.svg" alt="arXiv">
+  </a>
   <a href="https://github.com/CVL-UESTC/PixSGR">
     <img src="https://img.shields.io/github/stars/CVL-UESTC/PixSGR?style=social" alt="GitHub stars">
   </a>
@@ -30,9 +31,16 @@
 
 ## Overview
 
-PixSGR explores a pixel diffusion architecture that combines bottleneck and
-Transformer blocks with cross-scale guidance and sparse attention for global
-refinement.
+PixSGR is an efficient pixel-space diffusion framework for high-fidelity image
+generation. It starts from a supervised low-channel bottleneck that captures the
+low-dimensional manifold of natural images, then progressively expands the
+channel dimensionality and spatial resolution to recover fine-grained structures.
+During spatial refinement, coarse-scale attention maps preselect globally relevant
+interactions for fine-scale sparse attention, enabling non-local refinement without
+the quadratic cost of dense attention.
+
+On ImageNet, PixSGR achieves FID scores of **1.51** at **256 &times; 256** and
+**1.60** at **512 &times; 512**.
 
 ## Framework
 
